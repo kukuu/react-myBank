@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> REACT REDUX Application</title>
+    <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <style>
+      
+
+body {
+  margin:0 10px 0 20px;
+}
+
+
+div {
+  align: center;
+}
+
+h2 {
+  color: #32cd32;
+  text-align:center;
+  
+}
+
+h1 {
+  text-align:center;
+  color:$primary;
+}
+
+h1 span {
+  text-align:right;
+  color: #0000ff;
+  font-size:0.60em;
+  float:right;
+}
+
+img {
+  margin-top:15px;
+}
+
+p  {
+  margin-bottom:0;
+}
+
+ span.un, span.pwd {
+  padding : 5px;
+}
+
+button {
+  float:right;
+  margin-top:5px;
+}
+
+ul li {
+  
+  display:inline-block;
+  padding-right:20px;
+  border:1px solid #808080;
+  margin-right:10px;
+  text-align:center;
+  width:100px;
+  border-radius:3px;
+}
+
+
+.container-1{
+  display:flex;
+
+}
+
+
+.container-1 div{
+  padding:10px;
+  margin-right:10px;
+}
+
+.box-1{
+  flex:2;
+  order:1;
+  
+}
+
+.box-2{
+  flex:1;
+  order:2;
+  
+}
+
+.box-1, .box-2 {
+  border-radius:3px;
+  border:1px #ccc solid;
+}
+
+
+
+
+  </style>
+</head>
+<body>
+
+    <div id="root"></div>
+    
+    <!--<div>
+      <h3>CEO</h3>
+      <div class="row">
+        <img id="useravatar" src="" class="col-md-1"/>
+        <div class="col-md-3">
+          <strong id="username"></strong>
+        </div>
+      </div>
+      <hr/>
+      <h3>Tech Bulletin</h3>
+      <ul id="orgs" class="list-unstyled"></ul>
+    </div>-->
+
+    <script src="js/bundle.min.js"></script>
+    <!--<script src="js/axios.min.js"></script>
+    <script>
+    	axios.all([
+        axios.get('https://api.github.com/users/mzabriskie'),
+        axios.get('https://api.github.com/users/mzabriskie/orgs')
+      ]).then(axios.spread(function (user, orgs) {
+        document.getElementById('useravatar').src = user.data.avatar_url;
+        document.getElementById('username').innerHTML = user.data.name;
+        //retuns an array of lists
+        document.getElementById('orgs').innerHTML = orgs.data.map(function (org) {
+          return (
+            '<li class="row">' +
+              '<img src="' + org.avatar_url + '" class="col-md-1"/>' +
+              '<div class="col-md-3">' +
+                '<strong>' + org.login + '</strong>' +
+              '</div>' +
+            '</li>'
+          );
+        }).join('');//end map
+      }));//end then/spread
+    </script>-->
+</body>
+</html>
